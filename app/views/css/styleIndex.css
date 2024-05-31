@@ -1,0 +1,131 @@
+/* Global Styles */
+* {
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    min-height: 100vh;
+    background: rgb(162, 100, 212);
+    background: linear-gradient(
+        180deg,
+        rgba(162, 100, 212, 1) 0%,
+        rgba(162, 100, 212, 1) 14%,
+        rgba(105, 65, 138, 1) 58%,
+        rgba(0, 0, 0, 1) 100%
+    );
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Container Styles */
+.container {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    color: #fff;
+    background-color: rgb(65, 23, 109);
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 20px 35px rgb(113, 33, 187);
+    position: relative;
+}
+
+/* Heading Styles */
+h1,
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Link Styles */
+a {
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Button Styles */
+.button {
+    font-size: 1.25rem;
+    margin: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    background-color: rgb(129, 54, 209);
+    transition: all 0.3s ease;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: rgb(29, 7, 52);
+    color: #fff;
+    filter: blur(0.5px);
+}
+
+/* Session Close Button Styles */
+.cerrarsession {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    .button {
+        font-size: 1rem;
+    }
+}

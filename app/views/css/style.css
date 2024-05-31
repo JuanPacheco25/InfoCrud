@@ -1,0 +1,115 @@
+/* Importación de Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+/* Estilos Globales */
+* {
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: weight; /* Verificar este valor, puede que necesite ser especificado */
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del Cuerpo */
+body {
+    min-height: 100vh;
+    background: rgb(71, 18, 113);
+    background: linear-gradient(
+        4deg,
+        rgba(71, 18, 113, 1) 0%,
+        rgba(163, 180, 200, 1) 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Contenedor Principal */
+.contenedor {
+    width: 90%;
+    max-width: 300px;
+    padding: 2rem 1rem;
+    margin: 50px auto;
+    color: #fff;
+    background-color: rgb(43, 18, 69);
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 20px 35px rgb(113, 33, 187);
+}
+
+/* Estilos de los Formularios */
+form input {
+    width: 100%;
+    outline: none;
+    padding: 0.6rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    background-color: #e4e4e4;
+}
+
+label {
+    font-size: 1.25rem;
+    float: left;
+}
+
+/* Estilos de los Botones */
+.button {
+    font-size: 1.25rem;
+    margin: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    background-color: rgb(129, 54, 209);
+    transition: all 0.3s ease;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: rgb(29, 7, 52);
+    color: #fff;
+    filter: blur(0.5px);
+}
+
+.boton_Ingresar {
+    color: aliceblue;
+    font-size: 1.25rem;
+}
+
+/* Media Queries para Responsive Design */
+@media (min-width: 600px) {
+    .contenedor {
+        width: 80%;
+        max-width: 400px;
+    }
+
+    form input {
+        font-size: 1.25rem;
+    }
+
+    label {
+        font-size: 1.5rem;
+    }
+
+    .button {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .contenedor {
+        width: 70%;
+        max-width: 500px;
+    }
+}
